@@ -1,39 +1,20 @@
-# Teste para candidatos à vaga de desenvolvedor Front-End
+# Teste vaga octadesk
+Teste  realizado por Matheus Barem da Octadesk form builder utilizando Vue.js
 
-	Nesta etapa, você precisa desenvolver uma toolbox de componentes com base na imagem disponível e requisitos descritos.
 
-## Cenário:
-	
-	O octadesk quer investir em um novo produto que possui uma demanda específica.
-	Durante a design sprint deste produto surgiu uma hipótese que precisa ser validada. 
-	Esta hipótese depende de um editor de html drag'n drop para que o usuário possa customizar sua página corporativa.
-	Nossa analista de UX criou um protótipo simples e precisamos validar a experiência do usuário proposta.
-	Com base no protótipo e nas funcionalidades mandatórias abaixo descritas, devemos criar um protótipo mais fiel e, 
-	principalmente, funcional.
+## Sobre
+Sem muito tempo para executar a aplicação achei interessante utilizar o package [Vue Grid Layout](https://jbaysolutions.github.io/vue-grid-layout/) onde eu crio na Design Area em um array de objetos e armazeno as posições dos grids preenchidos que devem ser mostrados na tela, dentro dessas propriedades eu consigo renderizar outros componentes que estão na Toolbox.
 
-	Requisitos:
-	- como usuário, eu possuo uma toolbox para poder arrastar e soltar componentes desta toolbox na área de design
-	- como usuário, eu posso incluir e excluir tantos componentes quanto eu julgar necessário
-	- como usuário, eu posso customizar estes componentes visualmente
+## Demo
+[Live Demo](https://peaceful-varahamihira-b2aeba.netlify.app/)
 
-## Instruções:
 
-	1. Para iniciar o teste, faça um fork deste repositório;
-	2. Crie um branch com o seu nome;
-	3. Implemente os arquivos desenvolvidos;
-	3. Após terminar, submeta um pull request e aguarde seu feedback.
+## Observações
 
-	Observação: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
+Devido a alta demanda do meu trabalho atual não tive tempo para **refatorar** o código e aplicar as modificações necessárias para ter um código mais maduro, as modificações que eu aplicaria:
 
-## Considerações: 
-- Utilizar Vue como framework javascript;
-- Utilizar features do ES6+, por exemplo, async/await, object destructuring, map/spread operators;
-- Possuir um layout responsivo;
-- Documentação descrevendo a metodologia utilizada;
+ 1. Componentização de forma mais profunda, onde criaria um componente para Toolbox e outro para a Design area para "desafogar" o App.vue (como está no projeto na versão atual).
+ 2. Aplicaria o Vuex após a componentização para organizar melhor os estados da aplicação e comunicação entre os componentes além de deixar o código mais limpo dentro de cada um deles.
+ 3. Escreveria testes automatizados em Jest.js. 
+ 4. Trabalharia em volta de cada componente da Toolbox para deixa-los mais dinâmicos e customizáveis ao usuário. 
 
-## Diferenciais:
-- Utilizar vuex;
-- Utilizar typescript;
-- Utilizar testes automatizados;
-- Utilizar metodologias e boas práticas de código;
-- Publicar a aplicação em uma url pública;
